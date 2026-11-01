@@ -1,0 +1,652 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5FA35458C1CC4B11B9E62558 /* AppIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A731479A780947A096ED06EB /* AppIdentity.swift */; };
+		F7DCA7AA88F7424E85B00897 /* EffectivePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559801AA97BA4FCFB8807B99 /* EffectivePolicy.swift */; };
+		A24B943B2C764A099C6E6120 /* FilterMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052669044D840D893942C28 /* FilterMode.swift */; };
+		25FA110BC3CA4057B614DF94 /* FilterProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28980131D8144B88BB724E7 /* FilterProfile.swift */; };
+		7C8C8BD2A0FB43BC91DB7B10 /* FlamewallConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27FF7A436842D08770FA50 /* FlamewallConfig.swift */; };
+		727D43F7CD6D4AF38CB5C5FF /* FlamewallXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8DC42540F1404EB1CB352E /* FlamewallXPCProtocol.swift */; };
+		53E00E679DC84B27AE0E0CD0 /* NetworkUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BF7F8267B4A01BF1FB169 /* NetworkUsage.swift */; };
+		A636BC3D699546C78A61AB64 /* ProfileResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFD13B8D8884DFB90E32C88 /* ProfileResolver.swift */; };
+		DF76BBE9173742B2BFECBC67 /* RuleEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6738B4C3255C486791EFB5C6 /* RuleEvaluator.swift */; };
+		4098753B342F4D009C7E001F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E7D4BF5FEE4696B818C8FA /* AppDelegate.swift */; };
+		74E0DF8C462546F78E456CE7 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589009416FD4412ABB1F6DCB /* AppModel.swift */; };
+		03CC543DA9264FB3A67CE106 /* ByteFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CFCE45974B4FB6865CDC8A /* ByteFormat.swift */; };
+		1D100C43740B4ECCABE4157D /* FlamewallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A7E1266D874356BFC78296 /* FlamewallApp.swift */; };
+		7EDAB17BA17A4025A86FECE8 /* MenuBarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C833079342415DA2A67EDE /* MenuBarLabel.swift */; };
+		1D36B5911E2B45CBAEBE5389 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D403AFAB85417F932B4876 /* MenuBarView.swift */; };
+		82141560F74B468993D24F37 /* RunningAppsPickerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F67A591A3BF494BA058112C /* RunningAppsPickerSheet.swift */; };
+		500D1952F92D4F0883682E02 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C5DE9AAC84AEC890BD1EA /* SettingsView.swift */; };
+		4BEDBF58BEB94673B2A3D2B3 /* AppPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97171120F7374582A9F5CA24 /* AppPicker.swift */; };
+		D17CF19BE82C41D4BF2B6F12 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD02F6D89634E92B0A12B09 /* FilterController.swift */; };
+		E355CF6F71BF4F0892855A76 /* InterfaceCounters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0466151C520D4AC4BF913DBA /* InterfaceCounters.swift */; };
+		39C94FFD0BD0423A8FFE9A98 /* LoginItemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29321AEB9CEA41168D3E1D46 /* LoginItemService.swift */; };
+		06017CE074364CF1AD31B2B6 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DCCA4373DE4B148C69E53C /* NetworkMonitor.swift */; };
+		A334472F7EF54AAB9FDB9818 /* UsageTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAC0F68398D4830986BB41B /* UsageTracker.swift */; };
+		494904CF2E3D48739B6FE04A /* FlamewallStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0887F70BC34A45F7A41AAF75 /* FlamewallStore.swift */; };
+		D692661D96D34F0DB938F1BE /* AppIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A731479A780947A096ED06EB /* AppIdentity.swift */; };
+		A1DFAAFA13094357AF296C3C /* EffectivePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559801AA97BA4FCFB8807B99 /* EffectivePolicy.swift */; };
+		28287677E569469BBC12F5E6 /* FilterMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052669044D840D893942C28 /* FilterMode.swift */; };
+		123FA956E9624E389C6EE1F0 /* FilterProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28980131D8144B88BB724E7 /* FilterProfile.swift */; };
+		7D1C72A0F54D4730AEF6D809 /* FlamewallConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27FF7A436842D08770FA50 /* FlamewallConfig.swift */; };
+		64690C9E395B48808161FE96 /* FlamewallXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8DC42540F1404EB1CB352E /* FlamewallXPCProtocol.swift */; };
+		937FE6DA74EA46B784E4323B /* NetworkUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BF7F8267B4A01BF1FB169 /* NetworkUsage.swift */; };
+		6DC5E56516BF4B8B815C032D /* ProfileResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFD13B8D8884DFB90E32C88 /* ProfileResolver.swift */; };
+		F40C42623690498DB1985A03 /* RuleEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6738B4C3255C486791EFB5C6 /* RuleEvaluator.swift */; };
+		EF823B7921074AF1AA741689 /* FilterDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77CDEB3888BD4C929F791F53 /* FilterDataProvider.swift */; };
+		5E3EB5662C7C4E689D9479E6 /* FilterXPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7219B2FE84468DA6A76FE3 /* FilterXPC.swift */; };
+		2D544C4F546C4EB88EAE93BC /* PolicyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8083213D362648C2B7D53B27 /* PolicyStore.swift */; };
+		C742CFD0DE494247B6AFB12C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EEA2E9B4B64C1C85D2A6AD /* main.swift */; };
+		15E1B1DDDED64D0EBCC91359 /* AppIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A731479A780947A096ED06EB /* AppIdentity.swift */; };
+		3C74ADB27E644B55A5E2C783 /* EffectivePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559801AA97BA4FCFB8807B99 /* EffectivePolicy.swift */; };
+		9D3CFFA629B844EAA2E048F4 /* FilterMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052669044D840D893942C28 /* FilterMode.swift */; };
+		E7791ECFE9F64DED87CC99B7 /* FilterProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28980131D8144B88BB724E7 /* FilterProfile.swift */; };
+		FEA13E08390E45D5A277744C /* FlamewallConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E27FF7A436842D08770FA50 /* FlamewallConfig.swift */; };
+		69BDE9A844954D9A8432FCEE /* FlamewallXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8DC42540F1404EB1CB352E /* FlamewallXPCProtocol.swift */; };
+		932B2458AF104698A73CCBEA /* NetworkUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430BF7F8267B4A01BF1FB169 /* NetworkUsage.swift */; };
+		7F1A5630F9FE4D0C8648A3AC /* ProfileResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFD13B8D8884DFB90E32C88 /* ProfileResolver.swift */; };
+		1820C11109B8444F8C136665 /* RuleEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6738B4C3255C486791EFB5C6 /* RuleEvaluator.swift */; };
+		13EED7F0A24A4355AFA60F15 /* FlamewallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478A2169158C47F8B5703E13 /* FlamewallTests.swift */; };
+		13A73D95C48B42E289BC34E5 /* FlamewallFilter.systemextension in Embed */ = {isa = PBXBuildFile; fileRef = 9E1EF8087AC0461E97F9DC71 /* FlamewallFilter.systemextension */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C04EF56B87874347974BA5E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B5C3C64C614C2A85208411 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD0E8A487B2342A584B96068 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B2B0F3CC7A44061AF612C51 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF452F7BE374F72AB802933;
+			remoteInfo = FlamewallFilter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DE19DE5BA2C463A825EBE87 /* Embed System Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(SYSTEM_EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				13A73D95C48B42E289BC34E5 /* FlamewallFilter.systemextension in Embed */,
+			);
+			name = "Embed System Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1954E52AF1C54A14AF7DEBD2 /* Flamewall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flamewall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E1EF8087AC0461E97F9DC71 /* FlamewallFilter.systemextension */ = {isa = PBXFileReference; explicitFileType = "wrapper.systemextension"; includeInIndex = 0; path = FlamewallFilter.systemextension; sourceTree = BUILT_PRODUCTS_DIR; };
+		951698E0EC0B48629CC1D2AF /* FlamewallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlamewallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A731479A780947A096ED06EB /* AppIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIdentity.swift; sourceTree = "<group>"; };
+		559801AA97BA4FCFB8807B99 /* EffectivePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectivePolicy.swift; sourceTree = "<group>"; };
+		2052669044D840D893942C28 /* FilterMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterMode.swift; sourceTree = "<group>"; };
+		C28980131D8144B88BB724E7 /* FilterProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProfile.swift; sourceTree = "<group>"; };
+		5E27FF7A436842D08770FA50 /* FlamewallConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamewallConfig.swift; sourceTree = "<group>"; };
+		8E8DC42540F1404EB1CB352E /* FlamewallXPCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamewallXPCProtocol.swift; sourceTree = "<group>"; };
+		430BF7F8267B4A01BF1FB169 /* NetworkUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUsage.swift; sourceTree = "<group>"; };
+		DCFD13B8D8884DFB90E32C88 /* ProfileResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileResolver.swift; sourceTree = "<group>"; };
+		6738B4C3255C486791EFB5C6 /* RuleEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleEvaluator.swift; sourceTree = "<group>"; };
+		07E7D4BF5FEE4696B818C8FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		589009416FD4412ABB1F6DCB /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		D6CFCE45974B4FB6865CDC8A /* ByteFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByteFormat.swift; sourceTree = "<group>"; };
+		D5A7E1266D874356BFC78296 /* FlamewallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamewallApp.swift; sourceTree = "<group>"; };
+		E6C833079342415DA2A67EDE /* MenuBarLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarLabel.swift; sourceTree = "<group>"; };
+		B4D403AFAB85417F932B4876 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		6F67A591A3BF494BA058112C /* RunningAppsPickerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningAppsPickerSheet.swift; sourceTree = "<group>"; };
+		580C5DE9AAC84AEC890BD1EA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		97171120F7374582A9F5CA24 /* AppPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPicker.swift; sourceTree = "<group>"; };
+		DDD02F6D89634E92B0A12B09 /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
+		0466151C520D4AC4BF913DBA /* InterfaceCounters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceCounters.swift; sourceTree = "<group>"; };
+		29321AEB9CEA41168D3E1D46 /* LoginItemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemService.swift; sourceTree = "<group>"; };
+		A8DCCA4373DE4B148C69E53C /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		7FAC0F68398D4830986BB41B /* UsageTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageTracker.swift; sourceTree = "<group>"; };
+		0887F70BC34A45F7A41AAF75 /* FlamewallStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamewallStore.swift; sourceTree = "<group>"; };
+		77CDEB3888BD4C929F791F53 /* FilterDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterDataProvider.swift; sourceTree = "<group>"; };
+		CC7219B2FE84468DA6A76FE3 /* FilterXPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterXPC.swift; sourceTree = "<group>"; };
+		8083213D362648C2B7D53B27 /* PolicyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyStore.swift; sourceTree = "<group>"; };
+		26EEA2E9B4B64C1C85D2A6AD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		478A2169158C47F8B5703E13 /* FlamewallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlamewallTests.swift; sourceTree = "<group>"; };
+		D390611E60B441879BC68107 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60165D5E26844046B2601131 /* Flamewall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Flamewall.entitlements; sourceTree = "<group>"; };
+		C1B5C3C64C614C2A85208411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D630CDD6C3B54FFE84A3F4CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C00B6BAC8B134CF991354CEA /* FlamewallFilter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlamewallFilter.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B755A65435B346139BBAAEAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01882B4D9C24918B8A50554 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		349F238E08514D968FA198FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A70F4B55662B45A3B64636F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04EF56B87874347974BA5E3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXGroup section */
+		92616F79F7774621871239CD = {
+			isa = PBXGroup;
+			children = (
+				5F606CC5B4D644A993A56757 /* Flamewall */,
+				082FFAB21EA04DC6B51E27B8 /* FlamewallFilter */,
+				513162565B654420BB39F1B7 /* Shared */,
+				804DCB8E73224F3A93F3D94C /* FlamewallTests */,
+				4FC90F4501F44D7EAD72EBBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FC90F4501F44D7EAD72EBBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1954E52AF1C54A14AF7DEBD2 /* Flamewall.app */,
+				9E1EF8087AC0461E97F9DC71 /* FlamewallFilter.systemextension */,
+				951698E0EC0B48629CC1D2AF /* FlamewallTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		513162565B654420BB39F1B7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A731479A780947A096ED06EB /* AppIdentity.swift */,
+				559801AA97BA4FCFB8807B99 /* EffectivePolicy.swift */,
+				2052669044D840D893942C28 /* FilterMode.swift */,
+				C28980131D8144B88BB724E7 /* FilterProfile.swift */,
+				5E27FF7A436842D08770FA50 /* FlamewallConfig.swift */,
+				8E8DC42540F1404EB1CB352E /* FlamewallXPCProtocol.swift */,
+				430BF7F8267B4A01BF1FB169 /* NetworkUsage.swift */,
+				DCFD13B8D8884DFB90E32C88 /* ProfileResolver.swift */,
+				6738B4C3255C486791EFB5C6 /* RuleEvaluator.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		5F606CC5B4D644A993A56757 /* Flamewall */ = {
+			isa = PBXGroup;
+			children = (
+				425C5AE65FAE4DBF99C6ECF5 /* App */,
+				259D0E4D26EE4517BA8B1B53 /* Views */,
+				5138D8D119C344DAAE556CFF /* Services */,
+				2B2E62E48BC4414BA6519A38 /* Store */,
+				3A3804A745EF469689294B3A /* Resources */,
+			);
+			path = Flamewall;
+			sourceTree = "<group>";
+		};
+		425C5AE65FAE4DBF99C6ECF5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				07E7D4BF5FEE4696B818C8FA /* AppDelegate.swift */,
+				589009416FD4412ABB1F6DCB /* AppModel.swift */,
+				D6CFCE45974B4FB6865CDC8A /* ByteFormat.swift */,
+				D5A7E1266D874356BFC78296 /* FlamewallApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		259D0E4D26EE4517BA8B1B53 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6C833079342415DA2A67EDE /* MenuBarLabel.swift */,
+				B4D403AFAB85417F932B4876 /* MenuBarView.swift */,
+				6F67A591A3BF494BA058112C /* RunningAppsPickerSheet.swift */,
+				580C5DE9AAC84AEC890BD1EA /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5138D8D119C344DAAE556CFF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				97171120F7374582A9F5CA24 /* AppPicker.swift */,
+				DDD02F6D89634E92B0A12B09 /* FilterController.swift */,
+				0466151C520D4AC4BF913DBA /* InterfaceCounters.swift */,
+				29321AEB9CEA41168D3E1D46 /* LoginItemService.swift */,
+				A8DCCA4373DE4B148C69E53C /* NetworkMonitor.swift */,
+				7FAC0F68398D4830986BB41B /* UsageTracker.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2B2E62E48BC4414BA6519A38 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				0887F70BC34A45F7A41AAF75 /* FlamewallStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		3A3804A745EF469689294B3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D390611E60B441879BC68107 /* Info.plist */,
+				60165D5E26844046B2601131 /* Flamewall.entitlements */,
+				C1B5C3C64C614C2A85208411 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		082FFAB21EA04DC6B51E27B8 /* FlamewallFilter */ = {
+			isa = PBXGroup;
+			children = (
+				77CDEB3888BD4C929F791F53 /* FilterDataProvider.swift */,
+				CC7219B2FE84468DA6A76FE3 /* FilterXPC.swift */,
+				8083213D362648C2B7D53B27 /* PolicyStore.swift */,
+				26EEA2E9B4B64C1C85D2A6AD /* main.swift */,
+				D630CDD6C3B54FFE84A3F4CB /* Info.plist */,
+				C00B6BAC8B134CF991354CEA /* FlamewallFilter.entitlements */,
+			);
+			path = FlamewallFilter;
+			sourceTree = "<group>";
+		};
+		804DCB8E73224F3A93F3D94C /* FlamewallTests */ = {
+			isa = PBXGroup;
+			children = (
+				478A2169158C47F8B5703E13 /* FlamewallTests.swift */,
+			);
+			path = FlamewallTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		583EB356F128444DB1DC29B6 /* Flamewall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DDC0467D658495E9D0EB69F /* Build configuration list for PBXNativeTarget "Flamewall" */;
+			buildPhases = (
+				66FC4DA6BB0C4CDA83F4B9D5 /* Sources */,
+				B755A65435B346139BBAAEAF /* Frameworks */,
+				A70F4B55662B45A3B64636F6 /* Resources */,
+				2DE19DE5BA2C463A825EBE87 /* Embed System Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5BE0F34B1234CAE81EF2815 /* PBXTargetDependency */,
+			);
+			name = Flamewall;
+			productName = Flamewall;
+			productReference = 1954E52AF1C54A14AF7DEBD2 /* Flamewall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECF452F7BE374F72AB802933 /* FlamewallFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA91EB8DB3F34BA6BAFCC9A2 /* Build configuration list for PBXNativeTarget "FlamewallFilter" */;
+			buildPhases = (
+				2496F64B826349D4B7A09360 /* Sources */,
+				F01882B4D9C24918B8A50554 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlamewallFilter;
+			productName = FlamewallFilter;
+			productReference = 9E1EF8087AC0461E97F9DC71 /* FlamewallFilter.systemextension */;
+			productType = "com.apple.product-type.system-extension";
+		};
+		7DCED22C75BC46A2852BA5D2 /* FlamewallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDF1F8C7467E43F3BAFB9907 /* Build configuration list for PBXNativeTarget "FlamewallTests" */;
+			buildPhases = (
+				86FA7E9274D94C149A82B5F4 /* Sources */,
+				349F238E08514D968FA198FD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlamewallTests;
+			productName = FlamewallTests;
+			productReference = 951698E0EC0B48629CC1D2AF /* FlamewallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B2B0F3CC7A44061AF612C51 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = C4EE7078491940F88C76BEC3 /* Build configuration list for PBXProject "Flamewall" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92616F79F7774621871239CD;
+			productRefGroup = 4FC90F4501F44D7EAD72EBBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				583EB356F128444DB1DC29B6 /* Flamewall */,
+				ECF452F7BE374F72AB802933 /* FlamewallFilter */,
+				7DCED22C75BC46A2852BA5D2 /* FlamewallTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		66FC4DA6BB0C4CDA83F4B9D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA35458C1CC4B11B9E62558 /* AppIdentity.swift in Sources */,
+				F7DCA7AA88F7424E85B00897 /* EffectivePolicy.swift in Sources */,
+				A24B943B2C764A099C6E6120 /* FilterMode.swift in Sources */,
+				25FA110BC3CA4057B614DF94 /* FilterProfile.swift in Sources */,
+				7C8C8BD2A0FB43BC91DB7B10 /* FlamewallConfig.swift in Sources */,
+				727D43F7CD6D4AF38CB5C5FF /* FlamewallXPCProtocol.swift in Sources */,
+				53E00E679DC84B27AE0E0CD0 /* NetworkUsage.swift in Sources */,
+				A636BC3D699546C78A61AB64 /* ProfileResolver.swift in Sources */,
+				DF76BBE9173742B2BFECBC67 /* RuleEvaluator.swift in Sources */,
+				4098753B342F4D009C7E001F /* AppDelegate.swift in Sources */,
+				74E0DF8C462546F78E456CE7 /* AppModel.swift in Sources */,
+				03CC543DA9264FB3A67CE106 /* ByteFormat.swift in Sources */,
+				1D100C43740B4ECCABE4157D /* FlamewallApp.swift in Sources */,
+				7EDAB17BA17A4025A86FECE8 /* MenuBarLabel.swift in Sources */,
+				1D36B5911E2B45CBAEBE5389 /* MenuBarView.swift in Sources */,
+				82141560F74B468993D24F37 /* RunningAppsPickerSheet.swift in Sources */,
+				500D1952F92D4F0883682E02 /* SettingsView.swift in Sources */,
+				4BEDBF58BEB94673B2A3D2B3 /* AppPicker.swift in Sources */,
+				D17CF19BE82C41D4BF2B6F12 /* FilterController.swift in Sources */,
+				E355CF6F71BF4F0892855A76 /* InterfaceCounters.swift in Sources */,
+				39C94FFD0BD0423A8FFE9A98 /* LoginItemService.swift in Sources */,
+				06017CE074364CF1AD31B2B6 /* NetworkMonitor.swift in Sources */,
+				A334472F7EF54AAB9FDB9818 /* UsageTracker.swift in Sources */,
+				494904CF2E3D48739B6FE04A /* FlamewallStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2496F64B826349D4B7A09360 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D692661D96D34F0DB938F1BE /* AppIdentity.swift in Sources */,
+				A1DFAAFA13094357AF296C3C /* EffectivePolicy.swift in Sources */,
+				28287677E569469BBC12F5E6 /* FilterMode.swift in Sources */,
+				123FA956E9624E389C6EE1F0 /* FilterProfile.swift in Sources */,
+				7D1C72A0F54D4730AEF6D809 /* FlamewallConfig.swift in Sources */,
+				64690C9E395B48808161FE96 /* FlamewallXPCProtocol.swift in Sources */,
+				937FE6DA74EA46B784E4323B /* NetworkUsage.swift in Sources */,
+				6DC5E56516BF4B8B815C032D /* ProfileResolver.swift in Sources */,
+				F40C42623690498DB1985A03 /* RuleEvaluator.swift in Sources */,
+				EF823B7921074AF1AA741689 /* FilterDataProvider.swift in Sources */,
+				5E3EB5662C7C4E689D9479E6 /* FilterXPC.swift in Sources */,
+				2D544C4F546C4EB88EAE93BC /* PolicyStore.swift in Sources */,
+				C742CFD0DE494247B6AFB12C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86FA7E9274D94C149A82B5F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15E1B1DDDED64D0EBCC91359 /* AppIdentity.swift in Sources */,
+				3C74ADB27E644B55A5E2C783 /* EffectivePolicy.swift in Sources */,
+				9D3CFFA629B844EAA2E048F4 /* FilterMode.swift in Sources */,
+				E7791ECFE9F64DED87CC99B7 /* FilterProfile.swift in Sources */,
+				FEA13E08390E45D5A277744C /* FlamewallConfig.swift in Sources */,
+				69BDE9A844954D9A8432FCEE /* FlamewallXPCProtocol.swift in Sources */,
+				932B2458AF104698A73CCBEA /* NetworkUsage.swift in Sources */,
+				7F1A5630F9FE4D0C8648A3AC /* ProfileResolver.swift in Sources */,
+				1820C11109B8444F8C136665 /* RuleEvaluator.swift in Sources */,
+				13EED7F0A24A4355AFA60F15 /* FlamewallTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5BE0F34B1234CAE81EF2815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF452F7BE374F72AB802933 /* FlamewallFilter */;
+			targetProxy = DD0E8A487B2342A584B96068 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		41B81C1B0F4F4C45A9E4B41F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		34C30B4946F44AEC90BC6946 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FBE6746617224242A42C15F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Flamewall/Resources/Flamewall.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Flamewall/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamewall.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CE389CA492DF48C890D2461D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Flamewall/Resources/Flamewall.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Flamewall/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamewall.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AA92FDD164334D18A6572CAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FlamewallFilter/FlamewallFilter.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FlamewallFilter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamewall.app.filter;
+				PRODUCT_NAME = FlamewallFilter;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5A1ABA0D15DD499EA5149C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = FlamewallFilter/FlamewallFilter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FlamewallFilter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamewall.app.filter;
+				PRODUCT_NAME = FlamewallFilter;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ECCD87312E054C3AAEB501DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamewall.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7A893ED4EB7748F7925B4385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flamewall.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4EE7078491940F88C76BEC3 /* Build configuration list for PBXProject "Flamewall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41B81C1B0F4F4C45A9E4B41F /* Debug */,
+				34C30B4946F44AEC90BC6946 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DDC0467D658495E9D0EB69F /* Build configuration list for PBXNativeTarget "Flamewall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE6746617224242A42C15F2 /* Debug */,
+				CE389CA492DF48C890D2461D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA91EB8DB3F34BA6BAFCC9A2 /* Build configuration list for PBXNativeTarget "FlamewallFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA92FDD164334D18A6572CAC /* Debug */,
+				5A1ABA0D15DD499EA5149C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDF1F8C7467E43F3BAFB9907 /* Build configuration list for PBXNativeTarget "FlamewallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECCD87312E054C3AAEB501DE /* Debug */,
+				7A893ED4EB7748F7925B4385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B2B0F3CC7A44061AF612C51 /* Project object */;
+}
